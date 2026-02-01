@@ -1,0 +1,16 @@
+{
+  "name": "claw-env",
+  "version": "1.0.0",
+  "description": "Environment variable manager for AI agents",
+  "main": "index.js",
+  "bin": {
+    "claw-env": "./index.js"
+  },
+  "keywords": ["env", "environment", "agent", "cli", "dotenv"],
+  "author": "Julian Thorne",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/julianthorne2jz/claw-env"
+  }
+}
