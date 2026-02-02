@@ -7,41 +7,38 @@ A simple CLI for managing `.env` files — list, get, set, check, and export env
 ## Install
 
 ```bash
-npm install -g claw-env
-```
-
-Or run directly:
-```bash
-npx claw-env
+git clone https://github.com/julianthorne2jz/claw-env.git
+cd claw-env
+npm install
 ```
 
 ## Usage
 
 ```bash
 # List all variables
-claw-env list
+node index.js list
 
 # Get a specific variable
-claw-env get API_KEY
+node index.js get API_KEY
 
 # Set a variable
-claw-env set API_KEY sk-xxx
+node index.js set API_KEY sk-xxx
 
 # Remove a variable  
-claw-env rm OLD_KEY
+node index.js rm OLD_KEY
 
 # Check if required keys exist (exits 1 if missing)
-claw-env check API_KEY DATABASE_URL
+node index.js check API_KEY DATABASE_URL
 
 # Export as shell commands
-claw-env export
+node index.js export
 # Output: export API_KEY="sk-xxx"
 
 # Output as JSON
-claw-env json
+node index.js json
 
 # Create empty .env
-claw-env init
+node index.js init
 ```
 
 ## Options
