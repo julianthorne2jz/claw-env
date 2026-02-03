@@ -1,5 +1,16 @@
 # claw-env
 
+## Install
+
+```bash
+git clone https://github.com/julianthorne2jz/claw-env
+cd claw-env
+npm link
+```
+
+Now you can use `claw-env` from anywhere.
+
+
 Environment variable manager for AI agents.
 
 A simple CLI for managing `.env` files — list, get, set, check, and export environment variables. Built for agents who need quick access to configuration without parsing dotenv files manually.
@@ -16,29 +27,29 @@ npm install
 
 ```bash
 # List all variables
-node index.js list
+claw-env list
 
 # Get a specific variable
-node index.js get API_KEY
+claw-env get API_KEY
 
 # Set a variable
-node index.js set API_KEY sk-xxx
+claw-env set API_KEY sk-xxx
 
 # Remove a variable  
-node index.js rm OLD_KEY
+claw-env rm OLD_KEY
 
 # Check if required keys exist (exits 1 if missing)
-node index.js check API_KEY DATABASE_URL
+claw-env check API_KEY DATABASE_URL
 
 # Export as shell commands
-node index.js export
+claw-env export
 # Output: export API_KEY="sk-xxx"
 
 # Output as JSON
-node index.js json
+claw-env json
 
 # Create empty .env
-node index.js init
+claw-env init
 ```
 
 ## Options
